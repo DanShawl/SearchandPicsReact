@@ -2,5 +2,47 @@
   "emmet.preferences": {},
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      // {
+      //   "scope": ["entity.other.attribute-name.js"],
+      //   "settings": {
+      //     // "foreground": "#e2ffcbe5"
+      //     // "fontStyle": "bold"
+      //   }
+      // },
+      {
+        "scope": ["string.quoted.double.js"],
+        "settings": {
+          "foreground": "#e2ffcb75"
+          // "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": ["variable.parameter"],
+        "settings": {
+          // "foreground": "#e2ffcb"
+          "foreground": "#f9cbff"
+          // "fontStyle": "bold"
+        }
+      }
+      // {
+      //   "scope": ["variable"],
+      //   "settings": {
+      //     // "foreground": "#ffffff86"
+      //     // "fontStyle": "bold"
+      //   }
+      // },
+      // {
+      //   "scope": ["variable.other.constant"],
+      //   "settings": {
+      //     // "foreground": "#C586C0"
+      //     // "fontStyle": "bold"
+      //   }
+      // }
+    ]
   }
 }
+
+//#C586C0
