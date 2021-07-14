@@ -1,17 +1,14 @@
 import React from 'react';
 
-//  We need a class because we know we'll use state
+//  prevent default form behavior
+//  connect to parent component
 
 class SearchBar extends React.Component {
   state = { term: '' };
 
-  // we want a function to check if the input changes
-  // onInputChange(event) {
-  //   console.log(event.target.value);
-  // }
   onFormSubmit = (event) => {
     event.preventDefault();
-    console.log(this.state.term);
+    this.props.submit(this.state.term);
   };
   render() {
     return (
@@ -19,14 +16,13 @@ class SearchBar extends React.Component {
         <form onSubmit={this.onFormSubmit} className="ui form">
           <div className="field">
             <label>Image Search</label>
-            {/* every time we type, we will update the term property with setState */}
-
             <input
               type="text"
               value={this.state.term}
               onChange={(e) => this.setState({ term: e.target.value })}
             />
             {/* <input type="text" onChange={(e) => console.log(e.target.value)} /> */}
+            <h1>{this.state.term}</h1>
           </div>
         </form>
       </div>
@@ -81,7 +77,7 @@ export default SearchBar;
 //    What is 'this' used for in a class?
 //      Instance of SearchBar has state, render, and onFormSubmit
 //      'this' is a reference back to the class itself
-//       -  "give me a reference back to the instance of SearchBar"
+//       -  "gives me a reference back to the instance of SearchBar"
 //       -  we can use this to get access to state, render, onFormSubmit
 //       -  ex: this.state will give me access to the state object that belongs to this particular instance of SearchBar
 //    How is the value of 'this' determined in a function/method on a class?

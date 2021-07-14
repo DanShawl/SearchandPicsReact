@@ -20,6 +20,13 @@
         }
       },
       {
+        "scope": ["string.quoted.single.js"],
+        "settings": {
+          "foreground": "#e2ffcb75"
+          // "fontStyle": "bold"
+        }
+      },
+      {
         "scope": ["variable.parameter"],
         "settings": {
           // "foreground": "#e2ffcb"
