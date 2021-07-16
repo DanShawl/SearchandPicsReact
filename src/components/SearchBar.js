@@ -1,8 +1,5 @@
 import React from 'react';
 
-//  prevent default form behavior
-//  connect to parent component
-
 class SearchBar extends React.Component {
   state = { term: '' };
 
@@ -31,6 +28,8 @@ class SearchBar extends React.Component {
 }
 
 export default SearchBar;
+
+// **********************************************************************
 
 //  Creating Event Handlers ------------------------------------------
 //    onChange: special prop, used for detecting text change in an input

@@ -23,6 +23,8 @@ class App extends React.Component {
 
 export default App;
 
+// **********************************************************************
+
 //  On jsx elements like form, input, button, etc, we need to use specific prop names like onSubmit, onClick, etc
 //  HOWEVER, on our own components like SearchBar, we name them whatever we want
 
@@ -50,7 +52,8 @@ export default App;
 //          - first: find location and add /search/photos
 //          - second: we need to identify ourselves to access it
 //              - find authorization and look how to identify
-//              -
+//    3.  Inside the object, we need properties 'params' and 'headers'
+//          - Inside headers, we need an object with 'Authorization:' and our private key given from the api
 
 //  Handling Requests with Async Await -----------------------------------
 

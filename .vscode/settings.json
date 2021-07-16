@@ -31,6 +31,8 @@
         "settings": {
           // "foreground": "#e2ffcb"
           "foreground": "#f9cbff"
+          // "foreground": "#f9ffc3"
+          // "foreground": "#ddc3ff"
           // "fontStyle": "bold"
         }
       }

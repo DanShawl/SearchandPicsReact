@@ -11,6 +11,8 @@ export default axios.create({
   },
 });
 
+// **********************************************************************
+
 //  axios.create({}) is going to create an instance of the axios client with a couple defaulted properties
 //  this allows us to create a customized copy of it that is customized just towards making requests to some specific url with just our headers
 
