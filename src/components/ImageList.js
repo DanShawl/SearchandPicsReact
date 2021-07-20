@@ -1,13 +1,13 @@
 import './ImageList.css';
-import react from 'react';
+import React from 'react';
+import ImageCard from './ImageCard';
 
 const ImageList = (props) => {
-  const images = props.images.map(({ description, id, urls }) => {
+  const images = props.images.map((image) => {
     return (
-      <img
-        key={id}
-        src={urls.regular}
-        alt={description}
+      <ImageCard
+        key={image.id}
+        image={image}
         // style={{ width: '50vh' }}
       />
     );
@@ -32,4 +32,19 @@ export default ImageList;
 //     );
 //   });
 //   return <div>{images}</div>;
+// };
+
+//  WITH DESTRUCTURING
+// const ImageList = (props) => {
+//   const images = props.images.map(({ description, id, urls }) => {
+//     return (
+//       <img
+//         key={id}
+//         src={urls.regular}
+//         alt={description}
+//         // style={{ width: '50vh' }}
+//       />
+//     );
+//   });
+//   return <div className="image-list">{images}</div>;
 // };
